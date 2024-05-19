@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const InboxPage = () => {
   const query = [
     {
