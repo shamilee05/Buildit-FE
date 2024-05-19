@@ -1,5 +1,3 @@
-import React from "react";
-
 const Sidebar = ({ selectedPage }: { selectedPage: string }) => {
   return (
     <div className="drawer lg:drawer-open w-96 m-4 rounded-2xl h-full">

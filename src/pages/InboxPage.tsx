@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const InboxPage = () => {
-  const [query, setQuery] = useState([
+  const query = [
     {
       name: "Albert",
       email: "albertauhis@gmail.com",
@@ -17,7 +17,7 @@ const InboxPage = () => {
       email: "ming41528@yahoo.com",
       time: generateRandomDate().toLocaleDateString("en-US"),
     },
-  ]);
+  ];
 
   function generateRandomDate() {
     return new Date(+new Date() - Math.floor(Math.random() * 10000000000));
@@ -27,7 +27,7 @@ const InboxPage = () => {
     <div className="w-full h-full">
       <h1 className="card-title text-xl"> Query List</h1>
       <div className="flex flex-col gap-4 py-6 mr-4">
-        {query.map((data, dataIdx) => (
+        {query.map((data) => (
           <div
             key={data.name}
             className="card w-full bg-base-100 shadow-xl border-b border-base-300 flex flex-row items-center justify-between px-6 py-4 cursor-pointer hover:bg-base-200"

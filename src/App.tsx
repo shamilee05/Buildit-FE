@@ -1,6 +1,5 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
 import ProfilePage from "./pages/ProfilePage";
 import InboxPage from "./pages/InboxPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
@@ -8,7 +7,6 @@ import HelpPage from "./pages/HelpPage";
 import LoginPage from "./pages/LoginPage";
 import NavBar from "./components/NavBar";
 import Sidebar from "./components/Sidebar";
-import { useState } from "react";
 
 function App() {
   const router = createBrowserRouter([
